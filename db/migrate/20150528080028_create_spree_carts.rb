@@ -5,6 +5,6 @@ class CreateSpreeCarts < ActiveRecord::Migration
 
       t.timestamps
     end
-    ActiveRecord::Base.connection.execute("INSERT INTO spree_carts ('cart_status') VALUES ('false')")
+    ActiveRecord::Base.connection.execute("INSERT INTO spree_carts (cart_status) VALUES (false)")
   end
 end
